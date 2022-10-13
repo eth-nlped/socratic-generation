@@ -1,5 +1,5 @@
 
-# Automatic Generation of Socratic Subquestions for Teaching Math Word Problems
+# Automatic Generation of Scaffolding Questions for Teaching Math Word Problems
 
 This repository contains code of the paper:
 
