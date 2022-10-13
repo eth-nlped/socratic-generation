@@ -13,6 +13,22 @@ All experiments are performed on [GSM8K Dataset](https://github.com/openai/grade
 
 ![Overall architercure](Images/Socratic_mainfig.jpg)
 
+## Citation
+Please cite as:
+```bibtex
+@inproceedings{shridhar-macina-2022-scaffolding-generation,
+    title = "Automatic Generation of Scaffolding Questions for Learning Math",
+    author = "Shridhar, Kumar and
+    Macina, Jakub and
+    El-Assady, Mennatallah and
+    Sinha, Tanmay and
+    Kapur, Manu and
+    Sachan, Mrinmaya",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    year = "2022",
+    publisher = "Association for Computational Linguistics",
+}
+```
 
 
 ## Camera ready version of the paper and the code is coming soon!
