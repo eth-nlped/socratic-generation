@@ -1,22 +1,18 @@
-[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/release/python-376/)
-[![Pytorch 1.10](https://img.shields.io/badge/pytorch-1.10-blue.svg)](https://pytorch.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/eth-nlped/scaffolding-generation/blob/main/LICENSE)
 
-# Automatic Generation of Scaffolding Questions for Learning Math
+# Automatic Generation of Socratic Subquestions for Teaching Math Word Problems
+
 This repository contains code of the paper:
 
-[Automatic Generation of Scaffolding Questions for Learning Math]() (EMNLP 2022).  
-_Kumar Shridhar*, Jakub Macina*, Mennatallah El-Assady, Tanmay Sinha, Manu Kapur and Mrinmaya Sachan_
+[Automatic Generation of Scaffolding Questions for Learning Math]() (Accepted at EMNLP 2022).  
+*Kumar Shridhar*, Jakub Macina*, Mennatallah El-Assady, Tanmay Sinha, Manu Kapur and Mrinmaya Sachan*
+--
 
-## Dataset
-[GSM8K Dataset](https://github.com/openai/grade-school-math)
+We explore the ability of large language models (LMs) in generating sequential questions for guiding math word problem-solving. We propose various guided question generation schemes based on input conditioning and reinforcement learning and found that on both automatic and human quality evaluations, LMs constrained with desirable question properties generate superior questions and improve the overall performance of a math word problem solver.
 
-## Training
-```
-python train.py train
-```
+All experiments are performed on [GSM8K Dataset](https://github.com/openai/grade-school-math).
 
-## Running inference
-```
-python sample.py test
-```
+![Overall architercure](Images/Socratic_mainfig.png)
+
+
+
+## Camera ready version of the paper and the code is coming soon!
