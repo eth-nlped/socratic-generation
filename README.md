@@ -11,7 +11,7 @@ We explore the ability of large language models (LMs) in generating sequential q
 
 All experiments are performed on [GSM8K Dataset](https://github.com/openai/grade-school-math).
 
-![Overall architercure](Images/Socratic_mainfig.jpg)
+![Overall architecture](Images/Socratic_mainfig.jpg)
 
 ## Citation
 Please cite as:
@@ -30,5 +30,14 @@ Please cite as:
 }
 ```
 
+## User study
+- User study contains of html for both groups with user study and post-test evaluation, qualification script for selecting participants
+- See `treatment_group.html` for the user interface with generated questions as hints
+- See `control_group.html` for the user interface without questions
+
+![User study - control](Images/control.png)
+Control group
+![User study - treatment](Images/treatment.png)
+Treatment group
 
 ## Camera ready version of the paper and the code is coming soon!

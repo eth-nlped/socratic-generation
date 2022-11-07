@@ -1,0 +1,155 @@
+<QuestionForm xmlns='http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd'>
+
+    <Overview>
+        <Title>Qualification for Math Word Problem Solving</Title>
+        <Text>
+            This qualification contains 5 math word problems. Please answer ONLY in a numerical format. Please notice the time to submit the qualification test.
+        </Text>
+    </Overview>
+
+    <!-- QUESTION 1 -->
+    <Question>
+        <QuestionIdentifier>question_1</QuestionIdentifier>
+        <DisplayName>Q1</DisplayName>
+        <IsRequired>true</IsRequired>
+        <QuestionContent>
+            <Title>Question 1</Title>
+            <Text>Terry eats 2 yogurts a day. They are currently on sale at 4 yogurts for $5.00. How much does he spend
+                on yogurt over 30 days?
+            </Text>
+        </QuestionContent>
+
+        <AnswerSpecification>
+            <FreeTextAnswer>
+                <Constraints>
+                    <IsNumeric/>
+                </Constraints>
+            </FreeTextAnswer>
+        </AnswerSpecification>
+
+    </Question>
+
+    <!-- QUESTION 2 -->
+    <Question>
+        <QuestionIdentifier>question_2</QuestionIdentifier>
+        <DisplayName>Q2</DisplayName>
+        <IsRequired>true</IsRequired>
+        <QuestionContent>
+            <Title>Question 2</Title>
+            <Text>The biggest waterslide at Five Flags is 300 feet long, and people slide down at 60 feet/minute. The
+                second biggest waterslide is 240 feet long, but steeper, so people slide down at 80 feet/minute. How
+                much longer does it take to ride the biggest slide compared to the second biggest slide?
+            </Text>
+        </QuestionContent>
+
+        <AnswerSpecification>
+            <FreeTextAnswer>
+                <Constraints>
+                    <IsNumeric/>
+                </Constraints>
+            </FreeTextAnswer>
+        </AnswerSpecification>
+    </Question>
+
+    <!-- QUESTION 3 -->
+    <Question>
+        <QuestionIdentifier>question_3</QuestionIdentifier>
+        <DisplayName>Q3</DisplayName>
+        <IsRequired>true</IsRequired>
+        <QuestionContent>
+            <Title>Question 3</Title>
+            <Text>A salesman bought a case of 48 sneakers for $576. He sold 17 of them for $20 at a flash sale on
+                Monday, and the rest were sold to a department store for $25 each throughout the rest of the week. How
+                much money, in dollars, was the salesman's profit?
+            </Text>
+        </QuestionContent>
+
+        <AnswerSpecification>
+            <FreeTextAnswer>
+                <Constraints>
+                    <IsNumeric/>
+                </Constraints>
+            </FreeTextAnswer>
+        </AnswerSpecification>
+    </Question>
+
+    <!-- QUESTION 4 -->
+    <Question>
+        <QuestionIdentifier>question_4</QuestionIdentifier>
+        <DisplayName>Q4</DisplayName>
+        <IsRequired>true</IsRequired>
+        <QuestionContent>
+            <Title>Question 4</Title>
+            <Text>Three people invested $1200 in a joint savings account. After Dylan's investment of 2/5 of the total
+                amount, Frances invested 2/3 of the remaining amount. Skyler's investment accounted for the rest. How
+                much money was Skyler's investment?
+            </Text>
+        </QuestionContent>
+
+        <AnswerSpecification>
+            <FreeTextAnswer>
+                <Constraints>
+                    <IsNumeric/>
+                </Constraints>
+            </FreeTextAnswer>
+        </AnswerSpecification>
+    </Question>
+
+    <!-- QUESTION 5 -->
+    <Question>
+        <QuestionIdentifier>question_5</QuestionIdentifier>
+        <DisplayName>Q5</DisplayName>
+        <IsRequired>true</IsRequired>
+        <QuestionContent>
+            <Title>Question 5</Title>
+            <Text>Grace weighs 125 pounds. Alex weighs 2 pounds less than 4 times what Grace weighs. What are their
+                combined weights in pounds?
+            </Text>
+        </QuestionContent>
+
+        <AnswerSpecification>
+            <FreeTextAnswer>
+                <Constraints>
+                    <IsNumeric/>
+                </Constraints>
+            </FreeTextAnswer>
+        </AnswerSpecification>
+    </Question>
+
+
+    <!-- Highest education -->
+    <Question>
+        <QuestionIdentifier>question_education</QuestionIdentifier>
+        <DisplayName>Highest meth education</DisplayName>
+        <IsRequired>true</IsRequired>
+        <QuestionContent>
+            <Title>Highest math education</Title>
+            <Text>When was the last time you had a math class?</Text>
+        </QuestionContent>
+
+
+        <AnswerSpecification>
+            <SelectionAnswer>
+                <StyleSuggestion>radiobutton</StyleSuggestion>
+                <Selections>
+                    <Selection>
+                        <SelectionIdentifier>secondary</SelectionIdentifier>
+                        <Text>Secondary school</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>post_sec</SelectionIdentifier>
+                        <Text>Post-secondary</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>university</SelectionIdentifier>
+                        <Text>University</Text>
+                    </Selection>
+                </Selections>
+            </SelectionAnswer>
+        </AnswerSpecification>
+
+
+    </Question>
+
+
+</QuestionForm>
