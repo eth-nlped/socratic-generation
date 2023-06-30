@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+EXPORT_PREFIX_PATH=""
+PRETRAINED_MODEL_PREFIX_PATH=""
+QA_MODEL_PATH=""
+
+# Iterative - true or ""
+ITERATIVE=""
+# Planning - None, operator, equation
+PLANNING="operator"
+# Reward - fluency, number, qa, combined
+REWARD="combined"
+# Partial reward - true or ""
+QA_PARTIAL_REWARD="True"
+# Critic / planning - true or ""
+CRITIC=""
+EPOCHS=50
+# e.g. 10% of last epochs
+RL_EPOCHS=0.1
+
+RUN_NAME="QG-rewards-all-${NAME_PREFIX}=${REWARD}-plan=${PLANNING}-iter=${ITERATIVE}"
+echo "Running ${RUN_NAME}"
+
+PLANNING=$PLANNING ITERATIVE=$ITERATIVE EXPORT_PREFIX_PATH=$EXPORT_PREFIX_PATH PRETRAINED_MODEL_PREFIX_PATH=$PRETRAINED_MODEL_PREFIX_PATH \
+RUN_NAME=$RUN_NAME QA_PARTIAL_REWARD=$QA_PARTIAL_REWARD QA_MODEL_PATH=$QA_MODEL_PATH EPOCHS=$EPOCHS \
+REWARD=$REWARD MODEL_IMPORT_PATH=$MODEL_IMPORT_PATH MODEL_CKPT_PATH="" WANDB_MODE="disabled" \
+RL_EPOCHS=$RL_EPOCHS VALID_EVERY_EPOCH=$VALID_EVERY_EPOCH BATCH_SIZE=$BATCH_SIZE RETURN_SEQ=$RETURN_SEQ
+python question_generation_pipeline.py
